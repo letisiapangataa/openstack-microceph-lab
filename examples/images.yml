@@ -1,0 +1,6 @@
+# Example OpenStack images
+---
+- name: ubuntu-22.04
+  url: https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
+- name: cirros
+  url: https://download.cirros-cloud.net/0.6.2/cirros-0.6.2-x86_64-disk.img

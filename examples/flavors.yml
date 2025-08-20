@@ -1,0 +1,10 @@
+# Example OpenStack flavors
+---
+- name: m1.tiny
+  ram: 512
+  vcpus: 1
+  disk: 1
+- name: m1.small
+  ram: 2048
+  vcpus: 2
+  disk: 20

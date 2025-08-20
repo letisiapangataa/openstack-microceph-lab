@@ -1,0 +1,13 @@
+# Example OpenStack networks
+---
+- name: provider-net
+  provider: true
+  cidr: 192.168.100.0/24
+  gateway: 192.168.100.1
+  allocation_pools:
+    - start: 192.168.100.10
+      end: 192.168.100.200
+- name: tenant-net
+  provider: false
+  cidr: 10.10.10.0/24
+  gateway: 10.10.10.1

@@ -1,0 +1,2 @@
+# Example CRUSH map for MicroCeph
+# Customize as needed for your topology

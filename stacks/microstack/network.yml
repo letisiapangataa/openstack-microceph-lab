@@ -1,0 +1,11 @@
+# MicroStack network config example
+---
+networks:
+  - name: provider-net
+    type: flat
+    cidr: 192.168.100.0/24
+    gateway: 192.168.100.1
+  - name: tenant-net
+    type: vxlan
+    cidr: 10.10.10.0/24
+    gateway: 10.10.10.1

@@ -1,0 +1,7 @@
+# MicroCeph pools
+---
+pools:
+  - name: volumes
+    pg_num: 32
+  - name: images
+    pg_num: 32
