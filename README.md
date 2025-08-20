@@ -1,7 +1,6 @@
-# 📦 OpenStack MicroCeph Lab (ALP)
+# ♾️ OpenStack MicroCeph Lab (ALP)
 
-## Lab Goal
-Prove you can design and operate an Ubuntu-based OpenStack environment with Ceph as the storage backend, including benchmarking and failure drills — the closest thing to Canonical’s day-to-day.
+This lab demonstrates how to design and operate an Ubuntu-based OpenStack environment using Ceph as the storage backend. It covers deploying MicroStack and MicroCeph, integrating Cinder and Glance with Ceph, running benchmarks, performing failure drills, and automating operations with infrastructure-as-code tools. The project is structured for repeatability, documentation, and real-world operational scenarios.
 
 ## Milestones
 - M1: Single-node MicroStack up; launch first VM; floating IP works
