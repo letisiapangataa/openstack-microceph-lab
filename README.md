@@ -1,27 +1,36 @@
-# ♾️ OpenStack MicroCeph Lab (ALP)
+# ♾️ OpenStack MicroCeph Lab – Applied Lab Project  
 
-This lab demonstrates how to design and operate an Ubuntu-based OpenStack environment using Ceph as the storage backend. It covers deploying MicroStack and MicroCeph, integrating Cinder and Glance with Ceph, running benchmarks, performing failure drills, and automating operations with infrastructure-as-code tools. The project is structured for repeatability, documentation, and real-world operational scenarios.
+This lab project explores how to set up and operate an **Ubuntu-based OpenStack environment** with **Ceph as the storage backend**.  
+The goal is to gain hands-on experience with OpenStack services, Ceph storage integration, and day-2 operations.  
 
-## Milestones
-- M1: Single-node MicroStack up; launch first VM; floating IP works
-- M2: Multi-node: add cmp-01; Live-migrate VMs
-- M3: Deploy MicroCeph 3-node cluster; enable Cinder (RBD) & Glance on Ceph
-- M4: Benchmark storage with fio (RBD) and document results
-- M5: Failure drills: stop an OSD / reboot a node; verify data safety & VM continuity
-- M6: Hardening & ops: RBAC, quotas, backups, scripted day-2 ops
+It covers deploying **MicroStack** and **MicroCeph**, connecting **Cinder** and **Glance** to Ceph, running storage benchmarks, and practicing failure recovery scenarios.  
+The lab is designed for **learning, repeatability, and documentation** rather than production use.  
 
-## Repo Structure
+---
+
+## 🎯 Learning Milestones  
+- **M1**: Launch a single-node MicroStack instance; deploy first VM and test floating IP  
+- **M2**: Add a compute node (`cmp-01`) and practice VM live migration  
+- **M3**: Deploy a 3-node MicroCeph cluster; integrate Cinder (RBD) and Glance with Ceph storage  
+- **M4**: Benchmark storage performance with `fio` (RBD) and record results  
+- **M5**: Run failure drills (e.g. stop an OSD, reboot a node) and observe VM/data continuity  
+- **M6**: Explore hardening & operations — RBAC, quotas, backups, and scripted day-2 tasks  
+
+---
+
+## 📂 Repo Structure  
 ```
+
 openstack-microceph-lab/
 ├─ infra/
-│  ├─ terraform/           # (optional) libvirt or cloud instances
-│  └─ ansible/             # host bootstrap, pkg install, net setup
+│  ├─ terraform/           # optional: libvirt or cloud instance provisioning
+│  └─ ansible/             # host bootstrap, package install, network setup
 ├─ stacks/
-│  ├─ microstack/          # config, network, flavors, images
+│  ├─ microstack/          # configs: networks, flavors, images
 │  └─ microceph/           # ceph init/join, pools, crushmaps
 ├─ scripts/                # helper bash/python scripts
 ├─ docs/
-│  ├─ 00-overview.md
+│  ├─ 00-overview\.md
 │  ├─ 01-arch-diagram.drawio
 │  ├─ 02-setup-ubuntu.md
 │  ├─ 03-microstack.md
@@ -31,13 +40,24 @@ openstack-microceph-lab/
 │  ├─ 07-failure-drills.md
 │  └─ 08-operations.md
 ├─ examples/
-│  ├─ networks.yml         # provider+tenant nets
+│  ├─ networks.yml         # provider + tenant network configs
 │  ├─ flavors.yml
 │  ├─ images.yml
 │  └─ demo-instance.sh
 ├─ .github/workflows/validate.yml
 └─ README.md
+
 ```
 
-## Quick Start
-See `docs/02-setup-ubuntu.md` for initial setup instructions.
+---
+
+## 🚀 Quick Start  
+1. Prepare an Ubuntu 22.04 host or VMs.  
+2. Follow setup steps in [`docs/02-setup-ubuntu.md`](docs/02-setup-ubuntu.md).  
+3. Deploy MicroStack and MicroCeph, then work through the milestone exercises.  
+
+---
+
+## 📌 Notes  
+- This project is intended for **learning and experimentation**.  
+- It focuses on understanding **how OpenStack and Ceph interact** and practicing operational tasks in a safe lab setup.  
