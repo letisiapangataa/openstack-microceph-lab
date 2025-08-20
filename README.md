@@ -1,4 +1,4 @@
-# ♾️ OpenStack MicroCeph Lab (ALP)
+# ♾️ OpenStack MicroCeph Lab (Applied Lab Project)
 
 This lab project explores how to set up and operate an **Ubuntu-based OpenStack environment** with **Ceph as the storage backend**. The goal is to gain hands-on experience with OpenStack services, Ceph storage integration, and day-2 operations.  
 
