@@ -1,6 +1,6 @@
 # ♾️ OpenStack MicroCeph Lab (Applied Lab Project)
 
-This lab project explores how to set up and operate an **Ubuntu-based OpenStack environment** with **Ceph as the storage backend**. The goal is to gain hands-on experience with OpenStack services, Ceph storage integration, and day-2 operations. It covers deploying **MicroStack** and **MicroCeph**, connecting **Cinder** and **Glance** to Ceph, running storage benchmarks, and practicing failure recovery scenarios. The lab is designed for **learning, repeatability, and documentation** rather than production use.
+This lab project explores how to set up and operate an **Ubuntu-based OpenStack environment** with **Ceph as the storage backend**. The goal is to gain hands-on experience with OpenStack services, Ceph storage integration, and day-2 operations. It covers deploying **MicroStack** and **MicroCeph**, connecting **Cinder** and **Glance** to Ceph, running storage benchmarks, and practicing failure recovery scenarios. This lab is designed for **learning, repeatability, and documentation** rather than production use.
 
 For a lab overview : https://letisiapangataa.github.io/posts/openstack-ceph-lab/
 
